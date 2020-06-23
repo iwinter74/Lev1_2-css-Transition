@@ -1,0 +1,26 @@
+.box {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+div {
+    position: absolute;
+    height: 100px;
+    width: 100px
+}
+#red {
+    background: red;
+}
+#green {
+    background: green;
+    top: 150px;
+}
+.box:hover #green, .box:hover #red {
+   transform: translate(400px);
+   transition-duration: 5s;
+}
+.box:hover #green {
+    /* transition-timing-function: cubic-bezier(0.42,0,1,1); */
+    transition-delay: 1s;
+}
+
